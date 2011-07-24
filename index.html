@@ -2,9 +2,29 @@
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>54545</title>
+    <title></title>
+    <script type = "text/javascript" src = "js/libs/jquery-1.6.1.js"></script>
+    <script type = "text/javascript" src = "js/libs/jquery-ui-1.8.14.custom.min.js"></script>
+    <script type = "text/javascript" src = "js/libs/knockout-1.2.1-debug.js"></script>
+    <script type = "text/javascript" src = "app.js"></script>
+    <link type = "text/css" href = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/base/jquery-ui.css"
+          rel = "stylesheet" />
 </head>
 <body>
-
+<button data-bind = "click:login">Login</button>
+<div id = "divTab">
+    <ul>
+        <li><a href = "#tab-1">tab1</a></li>
+        <li><a href = "#tab-2">tab2</a></li>
+        <li><a href = "#tab-3">tab3</a></li>
+    </ul>
+    <div id = "tab-1">
+        <iframe id = "iframePage1" src = "pages/page1.html" width = "500" height = "500" frameborder = "0"></iframe>
+    </div>
+    <div id = "tab-2">
+        <iframe id = "iframePage2" src = "pages/page2.html" width = "500" height = "500" frameborder = "0"></iframe>
+    </div>
+    <div id = "tab-3">3</div>
+</div>
 </body>
 </html>
